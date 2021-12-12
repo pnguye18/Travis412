@@ -23,4 +23,8 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(6, 3), 2);
 	}
+	public void testDivideByZero() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.divide(6, 0), 2);
+	}
 }
